@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="job-main-page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="sticky-top">
+        <div class="container">
+            <!-- navbar section starts here -->
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo2.png" alt="logo-img"></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <a href="index.html">
+                            <li class="menu-list">Home</li>
+                        </a>
+                        <a href="#community">
+                            <li class="menu-list">Community</li>
+                        </a>
+                        <a href="#events">
+                            <li class="menu-list">Events</li>
+                        </a>
+                        <a href="job-main-page.html">
+                            <li class="menu-list">Jobs</li>
+                        </a>
+                        <a href="#contact">
+                            <li class="menu-list">Contact</li>
+                        </a>
+                    </ul>
+                    <div class="btns">
+                        <button class="signup btn btn-outline-dark">signup</button>
+                        <button class="login btn btn-dark">login</button>
+                    </div>
+                    <div class="menu-bar">
+                        <span class="bar-one"></span>
+                        <span class="bar-two"></span>
+                        <span class="bar-three"></span>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar section starts here -->
+        </div>
+    </header>
+
+
+    <div class="container-fluid" style="background-color: #fae7fc;">
+
+        <!-- hero container starts here-->
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Find your <span>new job</span> today</h1>
+                <p>Thousands of jobs in the computer, engineering and technology sectors are waiting for you.</p>
+                <form>
+                    <div class="input-group input-group-sm mb-3">
+
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="search" name="job-role" placeholder="What position are you looking for?" id="search" class="form-control">&nbsp;&nbsp;
+
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-location-dot"></i></span>
+                        <input type="text" name="location" placeholder="Location" id="location" class="form-control">&nbsp;&nbsp;
+
+                        <button type="submit" class="submit btn btn-dark">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero container ends here -->
+    <div class="container-fluid" style="background-color: #fff;">
+        <div class="job-container">
+            <div class="filter">
+                <h4>Filter Jobs</h4>
+                <form>
+                    <!-- locations -->
+                    <span>Locations</span><br>
+                    <input type="radio" name="location" value="delhi" id="delhi">
+                    <label for="delhi">Delhi</label><br>
+
+                    <input type="radio" name="location" value="hyderabad" id="hyderabad">
+                    <label for="hyderabad">Hyderabad</label><br>
+
+                    <input type="radio" name="location" value="bangalore" id="bangalore">
+                    <label for="bangalore">Bangalore</label><br>
+
+                    <input type="radio" name="location" value="pune" id="pune">
+                    <label for="pune">Pune</label><br>
+
+                    <input type="radio" name="location" value="chennai" id="chennai">
+                    <label for="chennai">Chennai</label><br>
+
+                    <input type="radio" name="location" value="mumbai" id="mumbai">
+                    <label for="mumbai">Mumbai</label><br><br>
+
+                    <!-- positions -->
+                    <span>Positions</span><br>
+                    <input type="checkbox" name="positions" value="frontend" id="frontend">
+                    <label for="frontend">Frontend Developer</label><br>
+
+                    <input type="checkbox" name="positions" value="backend" id="backend">
+                    <label for="backend">Backend Developer</label><br>
+
+                    <input type="checkbox" name="positions" value="fullstack" id="fullstack">
+                    <label for="fullstack">FullStack Developer</label><br>
+
+                    <input type="checkbox" name="positions" value="data science" id="data science">
+                    <label for="data science">Data Science</label><br>
+
+                    <input type="checkbox" name="positions" value="nextjs" id="nextjs">
+                    <label for="nextjs">NextJS Developer</label><br><br>
+
+                    <!-- salary -->
+                    <span>Salary</span><br>
+                    <input type="radio" name="salary" id="0to40k">
+                    <label for="0to40k">0 to 40k</label><br>
+                    <input type="radio" name="salary" id="42to1l">
+                    <label for="42to1l">42k to 1lakh</label><br>
+                    <input type="radio" name="salary" id="1lto5l">
+                    <label for="1lto5l">1lakh to 5lakh</label><br>
+                </form>
+            </div>
+
+            <div class="card-container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <div class="card-top">
+                                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+                                    alt="google-logo">
+                                <div>
+                                    <span class="company-name">Google</span><br>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                            <h5 class="job-role mt-2">Frontend Developer</h5>
+                            <p class="job-desc">I need a fresher Frontend Developer who can professional ui of web
+                                pages.</p>
+                            <div class="job-details">
+                                <span>2 positions</span>
+                                <span>Full Time</span>
+                                <span>25LPA</span>
+                            </div>
+                            <div class="btns mt-3">
+                                <button class="btn btn-outline-dark btn-sm">Details</button>
+                                <button class="btn btn-dark btn-sm">Save for Later</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <div class="card-top">
+                                <img src="https://static.vecteezy.com/system/resources/previews/020/190/476/original/infosys-logo-infosys-icon-free-free-vector.jpg"
+                                    alt="infosys-logo">
+                                <div>
+                                    <span class="company-name">Infosys</span><br>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                            <h5 class="job-role mt-2">FullStack Developer</h5>
+                            <p class="job-desc">I need a senior FullStack Developer who can able to write the efficient
+                                code and deal with frontend and backend both.</p>
+                            <div class="job-details">
+                                <span>1 positions</span>
+                                <span>Full Time</span>
+                                <span>35LPA</span>
+                            </div>
+                            <div class="btns mt-3">
+                                <button class="btn btn-outline-dark btn-sm">Details</button>
+                                <button class="btn btn-dark btn-sm">Save for Later</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <div class="card-top">
+                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/microsoft-icon.png"
+                                    alt="microsoft-logo">
+                                <div>
+                                    <span class="company-name">Microsoft</span><br>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                            <h5 class="job-role mt-2">Backend Developer</h5>
+                            <p class="job-desc">I need a senior Backend Developer who can code efficiently.</p>
+                            <div class="job-details">
+                                <span>2 positions</span>
+                                <span>Full Time</span>
+                                <span>15LPA</span>
+                            </div>
+                            <div class="btns mt-3">
+                                <button class="btn btn-outline-dark btn-sm">Details</button>
+                                <button class="btn btn-dark btn-sm">Save for Later</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <div class="card-top">
+                                <img src="https://play-lh.googleusercontent.com/35S3STYXYLazVyEWm9jMtHa0apgONr3_KPE-MqkyederSCPYszRjsRRppJr09MCbLVo=w240-h480-rw"
+                                    alt="microsoft-logo">
+                                <div>
+                                    <span class="company-name">Wipro</span><br>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                            <h5 class="job-role mt-2">Frontend Developer</h5>
+                            <p class="job-desc">I need a fresher Frontend Developer who can professional ui of web
+                                pages.</p>
+                            <div class="job-details">
+                                <span>3 positions</span>
+                                <span>Full Time</span>
+                                <span>18LPA</span>
+                            </div>
+                            <div class="btns mt-3">
+                                <button class="btn btn-outline-dark btn-sm">Details</button>
+                                <button class="btn btn-dark btn-sm">Save for Later</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <div class="card-top">
+                                <img src="https://ibsintelligence.com/wp-content/uploads/2021/09/TCS.jpg"
+                                    alt="microsoft-logo">
+                                <div>
+                                    <span class="company-name">TCS</span><br>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                            <h5 class="job-role mt-2">Frontend Developer</h5>
+                            <p class="job-desc">I need a fresher Frontend Developer who can professional ui of web
+                                pages.</p>
+                            <div class="job-details">
+                                <span>1 positions</span>
+                                <span>Full Time</span>
+                                <span>20LPA</span>
+                            </div>
+                            <div class="btns mt-3">
+                                <button class="btn btn-outline-dark btn-sm">Details</button>
+                                <button class="btn btn-dark btn-sm">Save for Later</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <div class="card-top">
+                                <img src="https://m.economictimes.com/thumb/msid-74861589,width-1200,height-900,resizemode-4,imgsize-35143/tech-mahindra-tweaks-brand-logo-to-convey-solidarity-in-fight-against-covid-19.jpg"
+                                    alt="tech-mahindra-logo">
+                                <div>
+                                    <span class="company-name">Tech Mahindra</span><br>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                            <h5 class="job-role mt-2">Frontend Developer</h5>
+                            <p class="job-desc">I need a fresher Frontend Developer who can professional ui of web
+                                pages.</p>
+                            <div class="job-details">
+                                <span>4 positions</span>
+                                <span>Full Time</span>
+                                <span>14LPA</span>
+                            </div>
+                            <div class="btns mt-3">
+                                <button class="btn btn-outline-dark btn-sm">Details</button>
+                                <button class="btn btn-dark btn-sm">Save for Later</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

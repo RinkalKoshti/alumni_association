@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {   
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
+    padding: 0 5rem 0 5rem !important;
+    /* background-color: #fafafa !important; */
+}
+
+header {
+    background-color: white;
+}
+
+.nav-bar {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky-top;
+}
+
+.nav-bar .logo img {
+    width: 170px;
+    height: 110px;
+}
+
+.nav-bar .menu {
+    width: 100%;
+    /* max-width: 100%; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-bar .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0;
+}
+
+.nav-bar .menu ul a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar .menu ul a:hover {
+    color: purple;
+    border-bottom: 1px solid purple;
+    transition: all .2s ease-in;
+}
+
+.menu a {
+    font-family: 'Poppins';
+}
+
+.btns button {
+    text-transform: capitalize;
+}
+
+.btns button:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.btn-dark {
+    background-color: purple !important;
+    border: 1px solid purple;   
+}
+
+.signup:hover {
+    background-color: purple !important;
+}
+
+.login:hover {
+    background-color: rgb(168, 3, 168) !important;
+}
+
+/* .menu-bar span {
+    background: #2c2c51;
+    height: 3px;
+    display: block;
+    margin-left: auto;
+}
+
+.menu-bar span .bar-one {
+    width: 20px;
+}
+
+.menu-bar span:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 786px) {
+    .menu-bar {
+        display: block;
+    }
+} */
+
+/* jobs section starts here */
+
+.container-fluid h2 {
+    padding-top: 2rem;
+}
+
+.container-fluid h2 span, h1 span {
+    color: purple;
+}
+
+.card-container {
+    /* font-family: 'Poppins'; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 auto;
+    margin-top: 1rem;
+}
+
+.card {
+    flex: 1 1 18rem;
+    max-width: 100%;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transform: translateZ(10px);
+    transition: all .5s ease-out;
+}
+
+.col-md-4:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.job-details {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.job-details span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.job-details span:first-child {
+    color: purple;
+}
+
+.job-details span {
+    color: #f01e2c;
+}
+
+.job-details span:last-child {
+    color: slateblue;
+}
+
+.company-name {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+    .container-fluid {
+        padding: 0 1rem !important;
+    }
+}
+
+/* jobs section ends here */
